@@ -1,4 +1,4 @@
-import { motion, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import AnimatedSection from "./AnimatedSection";
 
@@ -29,24 +29,24 @@ const Counter = ({ target, suffix = "" }: { target: number; suffix?: string }) =
 };
 
 const numbers = [
-  { label: "Ricavi target Year 5", value: 700, suffix: "M €", display: "600–800" },
-  { label: "EBITDA target", value: 82, suffix: "M €" },
-  { label: "Margine EBITDA", value: 14, suffix: "%" },
-  { label: "Aziende in portfolio", value: 45, suffix: "", display: "40–49" },
+  { label: "Year 5 Target Revenue", value: 700, suffix: "M €", display: "600–800" },
+  { label: "Target EBITDA", value: 82, suffix: "M €" },
+  { label: "EBITDA Margin", value: 14, suffix: "%" },
+  { label: "Portfolio Companies", value: 45, suffix: "", display: "40–49" },
 ];
 
 const KeyNumbersSection = () => (
-  <section id="numeri" className="section-padding bg-card/50">
+  <section id="numbers" className="section-padding bg-card/50">
     <div className="max-w-7xl mx-auto">
       <AnimatedSection>
         <p className="text-primary font-display text-sm font-medium tracking-widest uppercase mb-4">
-          I numeri
+          Key Numbers
         </p>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6 max-w-3xl">
-          Ambizione misurabile.
+          Measurable ambition.
         </h2>
         <p className="text-lg text-muted-foreground max-w-2xl mb-16">
-          TAM combinato SaaS + mobile app ~1.400 mld USD al 2030. Digital transformation Italia ~166 mld USD al 2030.
+          Combined TAM SaaS + mobile apps ~$1.4T by 2030. Digital transformation in Italy ~$166B by 2030.
         </p>
       </AnimatedSection>
 

@@ -3,28 +3,28 @@ import AnimatedSection from "./AnimatedSection";
 const phases = [
   {
     period: "Year 1",
-    title: "Fondazione",
+    title: "Foundation",
     items: [
-      "Costituzione holding e team core (CEO, CTO, CFO, VP M&A, COO)",
-      "Sviluppo MVP piattaforma (ERP core + primo modulo MES)",
-      "Prime 2–3 acquisizioni, revenue consolidati 25–35M €",
+      "Holding formation and core team (CEO, CTO, CFO, VP M&A, COO)",
+      "Platform MVP development (ERP core + first MES module)",
+      "First 2–3 acquisitions, consolidated revenue €25–35M",
     ],
   },
   {
     period: "Year 2–3",
-    title: "Accelerazione",
+    title: "Acceleration",
     items: [
-      "Acquisizioni fino a 18–22 aziende",
-      "Completamento roadmap AI: demand forecasting, quality control, predictive maintenance",
-      "EBITDA margin medio portafoglio ~14%",
+      "Acquisitions up to 18–22 companies",
+      "AI roadmap completion: demand forecasting, quality control, predictive maintenance",
+      "Average portfolio EBITDA margin ~14%",
     ],
   },
   {
     period: "Year 4–5",
-    title: "Scala",
+    title: "Scale",
     items: [
-      "Portafoglio 40+ aziende, revenue 600–800M €, EBITDA 82M €",
-      "Opzioni exit: IPO, vendita strategica o permanenza privata con refinance",
+      "Portfolio of 40+ companies, revenue €600–800M, EBITDA €82M",
+      "Exit options: IPO, strategic sale, or private continuation with refinance",
     ],
   },
 ];
@@ -37,12 +37,11 @@ const RoadmapSection = () => (
           Roadmap
         </p>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-16 max-w-3xl">
-          Il percorso verso la scala.
+          The path to scale.
         </h2>
       </AnimatedSection>
 
       <div className="relative">
-        {/* Timeline line */}
         <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-border" />
 
         <div className="space-y-12 md:space-y-0">
@@ -51,7 +50,6 @@ const RoadmapSection = () => (
               <div className={`md:grid md:grid-cols-2 md:gap-12 mb-12 ${i % 2 === 1 ? "md:direction-rtl" : ""}`}>
                 <div className={`${i % 2 === 1 ? "md:col-start-2" : ""}`}>
                   <div className="bg-card border border-border rounded-xl p-8 relative hover:border-primary/30 transition-all duration-300">
-                    {/* Dot on timeline */}
                     <div className="hidden md:block absolute top-8 w-3 h-3 rounded-full bg-primary glow-primary" style={{
                       [i % 2 === 0 ? 'right' : 'left']: '-1.875rem',
                     }} />

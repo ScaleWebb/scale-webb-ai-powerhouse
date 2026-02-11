@@ -4,30 +4,30 @@ import { Code2, Factory, Landmark } from "lucide-react";
 const targets = [
   {
     icon: Code2,
-    title: "Founder di prodotti digitali / SaaS",
-    text: "Offriamo exit attraenti, continuità di prodotto, crescita tramite piattaforma e team centralizzato.",
+    title: "Digital Product / SaaS Founders",
+    text: "We offer attractive exits, product continuity, growth through our platform and centralized team.",
   },
   {
     icon: Factory,
-    title: "Imprenditori manifatturieri / PMI",
-    text: "Portiamo AI, ERP cloud e operational excellence per aumentare margini e competitività senza snaturare brand e persone.",
+    title: "Manufacturing Entrepreneurs / SMEs",
+    text: "We bring AI, cloud ERP, and operational excellence to increase margins and competitiveness without changing your brand or people.",
   },
   {
     icon: Landmark,
-    title: "Investitori (PE, family office, fondi)",
-    text: "Accesso a un portafoglio diversificato di aziende digitali e manifatturiere con chiaro playbook di creazione di valore e potenziale IPO/exit.",
+    title: "Investors (PE, Family Offices, Funds)",
+    text: "Access a diversified portfolio of digital and manufacturing companies with a clear value creation playbook and IPO/exit potential.",
   },
 ];
 
 const TargetSection = () => (
-  <section id="target" className="section-padding">
+  <section id="audience" className="section-padding">
     <div className="max-w-7xl mx-auto">
       <AnimatedSection>
         <p className="text-primary font-display text-sm font-medium tracking-widest uppercase mb-4">
-          Per chi lo facciamo
+          Who We Serve
         </p>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-16 max-w-3xl">
-          Partner, non semplici acquisizioni.
+          Partners, not just acquisitions.
         </h2>
       </AnimatedSection>
 

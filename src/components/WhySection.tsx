@@ -4,35 +4,35 @@ import { Cpu, Factory, MapPin, Repeat } from "lucide-react";
 const points = [
   {
     icon: Cpu,
-    title: "Tecnologia AI-first",
-    text: "Piattaforma ERP + AI nativa, non retrofit. Ogni processo è potenziato da machine learning e analytics.",
+    title: "AI-First Technology",
+    text: "Native ERP + AI platform, not retrofit. Every process is powered by machine learning and analytics.",
   },
   {
     icon: Factory,
-    title: "Conoscenza manifatturiera",
-    text: "Focus profondo su operations, supply chain, qualità e produzione. Non siamo solo tech, siamo industriali.",
+    title: "Deep Manufacturing Expertise",
+    text: "Deep focus on operations, supply chain, quality, and production. We're not just tech—we're industrial.",
   },
   {
     icon: MapPin,
-    title: "Radici italiane, ambizione europea",
-    text: "Credibilità con PMI familiari italiane, cultura di lungo periodo. Pronti a scalare in tutta Europa.",
+    title: "Italian Roots, European Ambition",
+    text: "Credibility with Italian family SMEs, long-term culture. Ready to scale across Europe.",
   },
   {
     icon: Repeat,
-    title: "Playbook replicabile",
-    text: "Approccio industriale a prodotto, integrazione e crescita. Ispirato ai migliori: Bending Spoons, Constellation Software.",
+    title: "Replicable Playbook",
+    text: "Industrial approach to product, integration, and growth. Inspired by the best: Bending Spoons, Constellation Software.",
   },
 ];
 
 const WhySection = () => (
-  <section id="perche" className="section-padding">
+  <section id="why" className="section-padding">
     <div className="max-w-7xl mx-auto">
       <AnimatedSection>
         <p className="text-primary font-display text-sm font-medium tracking-widest uppercase mb-4">
-          Perché Scale Webb
+          Why Scale Webb
         </p>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-16 max-w-3xl">
-          Cosa ci rende unici.
+          What makes us unique.
         </h2>
       </AnimatedSection>
 

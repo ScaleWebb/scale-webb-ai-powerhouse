@@ -4,15 +4,15 @@ import logoImg from "@/assets/scalewebb-logo.png";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { label: "Chi siamo", href: "#chi-siamo" },
-  { label: "Modello", href: "#modello" },
-  { label: "Prodotti", href: "#prodotti" },
-  { label: "Per chi", href: "#target" },
-  { label: "Numeri", href: "#numeri" },
-  { label: "Perché noi", href: "#perche" },
+  { label: "About", href: "#about" },
+  { label: "Model", href: "#model" },
+  { label: "Products", href: "#products" },
+  { label: "Audience", href: "#audience" },
+  { label: "Numbers", href: "#numbers" },
+  { label: "Why Us", href: "#why" },
   { label: "Roadmap", href: "#roadmap" },
   { label: "Team", href: "#team" },
-  { label: "Contatti", href: "#contatti" },
+  { label: "Contact", href: "#contact" },
 ];
 
 const Navbar = () => {
@@ -42,7 +42,6 @@ const Navbar = () => {
           ScaleWebb
         </a>
 
-        {/* Desktop nav */}
         <div className="hidden lg:flex items-center gap-8">
           {navItems.map((item) => (
             <a
@@ -54,14 +53,13 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#contatti"
+            href="#contact"
             className="text-sm font-medium border border-neutral-600 text-white px-5 py-2 rounded-full hover:bg-white/10 transition-colors"
           >
-            Parla con il team →
+            Talk to us →
           </a>
         </div>
 
-        {/* Mobile toggle */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className="lg:hidden text-foreground p-2"
@@ -71,7 +69,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
@@ -92,11 +89,11 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="#contatti"
+                href="#contact"
                 onClick={() => setMobileOpen(false)}
                 className="text-base font-medium bg-primary text-primary-foreground px-5 py-3 rounded-md text-center hover:bg-primary/90 transition-colors"
               >
-                Parla con il team
+                Talk to us
               </a>
             </div>
           </motion.div>

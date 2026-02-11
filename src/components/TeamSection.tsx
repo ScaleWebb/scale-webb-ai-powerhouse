@@ -2,11 +2,11 @@ import AnimatedSection from "./AnimatedSection";
 import { User } from "lucide-react";
 
 const roles = [
-  { title: "Founder & CEO", desc: "Strategia, visione e relazioni con investitori" },
-  { title: "CTO / VP Engineering", desc: "Piattaforma tecnologica, AI e prodotto" },
-  { title: "CFO", desc: "Finanza, M&A structuring e reporting" },
-  { title: "COO", desc: "Operations, integrazione e playbook" },
-  { title: "VP M&A", desc: "Deal sourcing, due diligence e negoziazione" },
+  { title: "Founder & CEO", desc: "Strategy, vision, and investor relations" },
+  { title: "CTO / VP Engineering", desc: "Technology platform, AI, and product" },
+  { title: "CFO", desc: "Finance, M&A structuring, and reporting" },
+  { title: "COO", desc: "Operations, integration, and playbook" },
+  { title: "VP M&A", desc: "Deal sourcing, due diligence, and negotiation" },
 ];
 
 const TeamSection = () => (
@@ -17,7 +17,7 @@ const TeamSection = () => (
           Team & Governance
         </p>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-16 max-w-3xl">
-          Leadership di esperienza.
+          Experienced leadership.
         </h2>
       </AnimatedSection>
 
@@ -37,7 +37,7 @@ const TeamSection = () => (
 
       <AnimatedSection delay={0.4}>
         <p className="text-center text-muted-foreground max-w-2xl mx-auto">
-          Board con PE partner, esperti manifatturieri e leader tecnologici per garantire governance solida e visione strategica.
+          Board with PE partners, manufacturing experts, and technology leaders ensuring solid governance and strategic vision.
         </p>
       </AnimatedSection>
     </div>
