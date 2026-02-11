@@ -4,7 +4,6 @@ import hero3d from "@/assets/hero-3d-visual.png";
 
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-end overflow-hidden bg-black">
-    {/* 3D Visual on the right */}
     <motion.div
       initial={{ opacity: 0, x: 80 }}
       animate={{ opacity: 1, x: 0 }}
@@ -26,35 +25,34 @@ const HeroSection = () => (
         className="max-w-3xl"
       >
         <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold leading-[1.05] tracking-tight text-white mb-8">
-          <span className="text-[hsl(195,100%,75%)]">La holding AI-first</span>{" "}
-          che consolida digitale e manifattura in Europa.
+          <span className="text-primary">The AI-first holding</span>{" "}
+          consolidating digital & manufacturing in Europe.
         </h1>
 
         <p className="text-lg md:text-xl text-neutral-400 leading-relaxed max-w-xl mb-12">
-          Scale Webb acquisisce e trasforma prodotti digitali e PMI manifatturiere,
-          integrandoli in una piattaforma tecnologica centralizzata basata su AI ed ERP cloud.
+          Scale Webb acquires and transforms digital products and manufacturing SMEs,
+          integrating them into a centralized AI & cloud ERP technology platform.
         </p>
 
         <div className="flex items-center gap-6">
           <a
-            href="#contatti"
+            href="#contact"
             className="inline-flex items-center gap-2 border border-neutral-600 text-white px-7 py-3.5 rounded-full font-display font-medium text-sm hover:bg-white/10 transition-all"
           >
-            Parla con il team
+            Talk to the team
             <ArrowRight size={16} />
           </a>
           <a
-            href="#chi-siamo"
+            href="#about"
             className="inline-flex items-center gap-1.5 text-neutral-300 font-display font-medium text-sm hover:text-white transition-colors"
           >
-            Scopri di più
+            Learn more
             <ArrowRight size={16} />
           </a>
         </div>
       </motion.div>
     </div>
 
-    {/* Scroll indicator */}
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

@@ -5,42 +5,42 @@ const steps = [
   {
     icon: Search,
     num: "01",
-    title: "Identificare",
-    text: "Prodotti digitali e PMI manifatturiere ad alto potenziale: revenue 10–50M €, margini migliorabili, base clienti solida.",
+    title: "Identify",
+    text: "High-potential digital products and manufacturing SMEs: revenue €10–50M, improvable margins, solid customer base.",
   },
   {
     icon: Layers,
     num: "02",
-    title: "Acquisire & Centralizzare",
-    text: "Tecnologia, dati e processi vengono integrati su una piattaforma AI + ERP cloud proprietaria.",
+    title: "Acquire & Centralize",
+    text: "Technology, data, and processes are integrated onto a proprietary AI + cloud ERP platform.",
   },
   {
     icon: Settings,
     num: "03",
-    title: "Ottimizzare",
-    text: "Playbook di integrazione operativo: supply chain, produzione, qualità e finance per aumentare margini e ridurre costi.",
+    title: "Optimize",
+    text: "Operational integration playbook: supply chain, production, quality, and finance to increase margins and reduce costs.",
   },
   {
     icon: Rocket,
     num: "04",
-    title: "Scalare",
-    text: "Espansione geografica, verticalizzazione dei moduli software e acquisizioni continue.",
+    title: "Scale",
+    text: "Geographic expansion, software module verticalization, and continuous acquisitions.",
   },
 ];
 
 const BusinessModelSection = () => (
-  <section id="modello" className="section-padding">
+  <section id="model" className="section-padding">
     <div className="max-w-7xl mx-auto">
       <AnimatedSection>
         <p className="text-primary font-display text-sm font-medium tracking-widest uppercase mb-4">
-          Il modello
+          The Model
         </p>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6 max-w-3xl">
-          Come funziona il nostro modello.
+          How our model works.
         </h2>
         <p className="text-lg text-muted-foreground max-w-2xl mb-16">
-          Un modello integrato che combina ricavi operativi delle aziende manifatturiere,
-          ricavi SaaS e servizi di implementazione.
+          An integrated model combining manufacturing operational revenue,
+          SaaS revenue, and implementation services.
         </p>
       </AnimatedSection>
 

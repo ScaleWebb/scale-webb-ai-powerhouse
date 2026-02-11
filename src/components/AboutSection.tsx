@@ -2,37 +2,37 @@ import AnimatedSection from "./AnimatedSection";
 import { Building2, Brain, TrendingUp, Globe } from "lucide-react";
 
 const metrics = [
-  { icon: Building2, label: "Focus", value: "PMI & SaaS" },
+  { icon: Building2, label: "Focus", value: "SMEs & SaaS" },
   { icon: Brain, label: "Core", value: "AI-first" },
-  { icon: TrendingUp, label: "Approccio", value: "PE + Tech" },
-  { icon: Globe, label: "Ambizione", value: "Europa" },
+  { icon: TrendingUp, label: "Approach", value: "PE + Tech" },
+  { icon: Globe, label: "Ambition", value: "Europe" },
 ];
 
 const AboutSection = () => (
-  <section id="chi-siamo" className="section-padding">
+  <section id="about" className="section-padding">
     <div className="max-w-7xl mx-auto">
       <AnimatedSection>
         <p className="text-primary font-display text-sm font-medium tracking-widest uppercase mb-4">
-          Chi siamo
+          About Us
         </p>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6 max-w-3xl">
-          Disciplina finanziaria. Eccellenza tecnologica.
+          Financial discipline. Technological excellence.
         </h2>
       </AnimatedSection>
 
       <div className="grid lg:grid-cols-2 gap-16 mt-12">
         <AnimatedSection delay={0.1}>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-            Scale Webb è una holding innovativa con sede in Italia, con focus su acquisizioni di app,
-            piattaforme digitali, SaaS e PMI manifatturiere.
+            Scale Webb is an innovative holding company based in Italy, focused on acquiring apps,
+            digital platforms, SaaS products, and manufacturing SMEs.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-            Combina la disciplina da private equity — acquisizione, ottimizzazione operativa — con l'eccellenza
-            di prodotto tecnologico: ERP verticale, AI e analytics avanzati.
+            We combine private equity discipline — acquisition, operational optimization — with
+            technological product excellence: vertical ERP, AI, and advanced analytics.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            La nostra visione è diventare una delle big tech europee in grado di migliorare ed integrare
-            tecnologie digitali nei settori trasversali, con particolare focus sulla manifattura.
+            Our vision is to become one of Europe's leading tech companies, integrating
+            digital technologies across industries with a particular focus on manufacturing.
           </p>
         </AnimatedSection>
 

@@ -5,7 +5,7 @@ const Footer = () => (
         Scale<span className="text-primary">Webb</span>
       </p>
       <p className="text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Scale Webb S.p.A. — Tutti i diritti riservati.
+        © {new Date().getFullYear()} Scale Webb S.p.A. — All rights reserved.
       </p>
     </div>
   </footer>

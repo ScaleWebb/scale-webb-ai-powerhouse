@@ -4,18 +4,18 @@ import { Eye, Target, Shield } from "lucide-react";
 const cards = [
   {
     icon: Eye,
-    title: "Visione",
-    text: "Costruire la piattaforma di riferimento in Europa per prodotti digitali e aziende manifatturiere trasformate dall'AI.",
+    title: "Vision",
+    text: "Build the leading European platform for digital products and AI-transformed manufacturing companies.",
   },
   {
     icon: Target,
-    title: "Missione",
-    text: "Acquisire, integrare e far crescere prodotti digitali e PMI manifatturiere attraverso una piattaforma AI-first e un playbook operativo replicabile.",
+    title: "Mission",
+    text: "Acquire, integrate, and grow digital products and manufacturing SMEs through an AI-first platform and a replicable operational playbook.",
   },
   {
     icon: Shield,
-    title: "Valori",
-    text: "Operational excellence e decisioni data-driven. Rispetto dei founder. Innovazione AI/ML. Disciplina finanziaria. Orizzonte lungo periodo.",
+    title: "Values",
+    text: "Operational excellence and data-driven decisions. Founder respect. AI/ML innovation. Financial discipline. Long-term horizon.",
   },
 ];
 
@@ -24,10 +24,10 @@ const VisionSection = () => (
     <div className="max-w-7xl mx-auto">
       <AnimatedSection>
         <p className="text-primary font-display text-sm font-medium tracking-widest uppercase mb-4">
-          Visione & Valori
+          Vision & Values
         </p>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-16 max-w-3xl">
-          Costruire per il lungo periodo.
+          Building for the long term.
         </h2>
       </AnimatedSection>
 
