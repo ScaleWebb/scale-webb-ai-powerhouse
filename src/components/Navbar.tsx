@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import logoImg from "@/assets/scalewebb-logo.png";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
@@ -36,8 +37,9 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="font-display text-xl md:text-2xl font-bold tracking-tight text-foreground">
-          Scale<span className="text-primary">Webb</span>
+        <a href="#" className="flex items-center gap-2 font-display text-xl md:text-2xl font-bold tracking-tight text-white">
+          <img src={logoImg} alt="Scale Webb logo" className="h-8 md:h-10 w-auto invert" />
+          ScaleWebb
         </a>
 
         {/* Desktop nav */}
