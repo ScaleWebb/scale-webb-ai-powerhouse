@@ -1,66 +1,57 @@
 import { motion } from "framer-motion";
-import { ArrowDown, FileText } from "lucide-react";
-import heroVisual from "@/assets/hero-visual.jpg";
+import { ArrowRight, ArrowDown } from "lucide-react";
+import hero3d from "@/assets/hero-3d-visual.png";
 
 const HeroSection = () => (
-  <section className="relative min-h-screen flex items-center overflow-hidden">
-    {/* Background image */}
-    <div className="absolute inset-0">
+  <section className="relative min-h-screen flex items-end overflow-hidden bg-black">
+    {/* 3D Visual on the right */}
+    <motion.div
+      initial={{ opacity: 0, x: 80 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1.2, delay: 0.4, ease: "easeOut" }}
+      className="absolute right-0 top-1/2 -translate-y-1/2 w-[45%] h-[80%] hidden lg:block pointer-events-none"
+    >
       <img
-        src={heroVisual}
-        alt="Network AI visualization"
-        className="w-full h-full object-cover opacity-40"
-        loading="eager"
+        src={hero3d}
+        alt="3D geometric visual"
+        className="w-full h-full object-contain object-right"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/40" />
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/60" />
-    </div>
+    </motion.div>
 
-    <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pt-32 pb-20 w-full">
-      <div className="grid lg:grid-cols-2 gap-12 items-center">
-        <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          <p className="text-primary font-display text-sm md:text-base font-medium tracking-widest uppercase mb-6">
-            Scaling digital & manufacturing with AI
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold leading-[1.1] tracking-tight text-foreground mb-8">
-            La holding AI-first che consolida{" "}
-            <span className="text-gradient-primary">digitale e manifattura</span>{" "}
-            in Europa.
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl mb-10">
-            Scale Webb acquisisce e trasforma prodotti digitali e PMI manifatturiere,
-            integrandoli in una piattaforma tecnologica centralizzata basata su AI ed ERP cloud,
-            per aumentare margini, efficienza e valore nel lungo termine.
-          </p>
+    <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pb-32 pt-48 w-full">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className="max-w-3xl"
+      >
+        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold leading-[1.05] tracking-tight text-white mb-8">
+          <span className="text-[hsl(195,100%,75%)]">La holding AI-first</span>{" "}
+          che consolida digitale e manifattura in Europa.
+        </h1>
 
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="#contatti"
-              className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-md font-display font-semibold text-base hover:bg-primary/90 transition-all glow-primary"
-            >
-              Parla con il team
-            </a>
-            <a
-              href="#"
-              className="inline-flex items-center justify-center gap-2 border border-border text-foreground px-8 py-4 rounded-md font-display font-medium text-base hover:bg-secondary transition-all"
-            >
-              <FileText size={18} />
-              Scarica il business plan
-            </a>
-          </div>
-        </motion.div>
+        <p className="text-lg md:text-xl text-neutral-400 leading-relaxed max-w-xl mb-12">
+          Scale Webb acquisisce e trasforma prodotti digitali e PMI manifatturiere,
+          integrandoli in una piattaforma tecnologica centralizzata basata su AI ed ERP cloud.
+        </p>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
-          className="hidden lg:block"
-        />
-      </div>
+        <div className="flex items-center gap-6">
+          <a
+            href="#contatti"
+            className="inline-flex items-center gap-2 border border-neutral-600 text-white px-7 py-3.5 rounded-full font-display font-medium text-sm hover:bg-white/10 transition-all"
+          >
+            Parla con il team
+            <ArrowRight size={16} />
+          </a>
+          <a
+            href="#chi-siamo"
+            className="inline-flex items-center gap-1.5 text-neutral-300 font-display font-medium text-sm hover:text-white transition-colors"
+          >
+            Scopri di più
+            <ArrowRight size={16} />
+          </a>
+        </div>
+      </motion.div>
     </div>
 
     {/* Scroll indicator */}
@@ -70,12 +61,11 @@ const HeroSection = () => (
       transition={{ delay: 1.5 }}
       className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
     >
-      <span className="text-xs text-muted-foreground tracking-widest uppercase">Scopri di più</span>
       <motion.div
         animate={{ y: [0, 8, 0] }}
         transition={{ repeat: Infinity, duration: 1.8 }}
       >
-        <ArrowDown size={20} className="text-primary" />
+        <ArrowDown size={20} className="text-neutral-500" />
       </motion.div>
     </motion.div>
   </section>
