@@ -78,16 +78,16 @@ const Navbar = () => {
           className="lg:hidden bg-background/95 backdrop-blur-xl border-b border-border overflow-hidden">
 
             <div className="px-6 py-6 flex flex-col gap-4">
-              {navItems.map((item) => {}
+              {navItems.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="text-base text-muted-foreground hover:text-white transition-colors">
+                  {item.label}
+                </a>
+              ))}
 
-
-
-
-
-
-
-
-            )}
               <a
               href="#contact"
               onClick={() => setMobileOpen(false)}
