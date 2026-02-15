@@ -1,21 +1,9 @@
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowDown } from "lucide-react";
-import hero3d from "@/assets/hero-3d-visual.png";
 
 const HeroSection = () =>
 <section className="relative min-h-screen flex items-end overflow-hidden bg-black">
-    <motion.div
-    initial={{ opacity: 0, x: 80 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition={{ duration: 1.2, delay: 0.4, ease: "easeOut" }}
-    className="absolute right-0 top-1/2 -translate-y-1/2 w-[45%] h-[80%] hidden lg:block pointer-events-none">
 
-      <img
-      src={hero3d}
-      alt="3D geometric visual"
-      className="w-full h-full object-contain object-right" />
-
-    </motion.div>
 
     <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pb-32 pt-48 w-full">
       <motion.div
