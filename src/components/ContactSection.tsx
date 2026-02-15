@@ -1,8 +1,8 @@
 import AnimatedSection from "./AnimatedSection";
 import { Mail, MapPin } from "lucide-react";
 
-const ContactSection = () => (
-  <section id="contact" className="section-padding bg-card/50">
+const ContactSection = () =>
+<section id="contact" className="section-padding bg-card/50">
     <div className="max-w-4xl mx-auto text-center">
       <AnimatedSection>
         <p className="text-primary font-display text-sm font-medium tracking-widest uppercase mb-4">
@@ -16,9 +16,9 @@ const ContactSection = () => (
         </p>
 
         <a
-          href="mailto:info@scalewebb.com"
-          className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-10 py-4 rounded-md font-display font-semibold text-lg hover:bg-primary/90 transition-all glow-primary mb-12"
-        >
+
+        className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-10 py-4 rounded-md font-display font-semibold text-lg hover:bg-primary/90 transition-all glow-primary mb-12" href="mailto:primary@scalewebb.com">
+
           Request a call
         </a>
 
@@ -34,7 +34,7 @@ const ContactSection = () => (
         </div>
       </AnimatedSection>
     </div>
-  </section>
-);
+  </section>;
+
 
 export default ContactSection;
