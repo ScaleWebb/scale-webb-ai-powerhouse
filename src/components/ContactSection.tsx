@@ -25,7 +25,7 @@ const ContactSection = () =>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-muted-foreground">
           <div className="flex items-center gap-2">
             <Mail size={18} className="text-primary" />
-            <span className="text-sm">info@scalewebb.com</span>
+            <span className="text-sm">primary@scalewebb.com</span>
           </div>
           <div className="flex items-center gap-2">
             <MapPin size={18} className="text-primary" />
