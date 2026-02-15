@@ -12,7 +12,7 @@ const HeroSection = () =>
       transition={{ duration: 0.8, delay: 0.2 }}
       className="max-w-3xl">
 
-        <h1 className="text-5xl lg:text-7xl xl:text-8xl font-display font-bold leading-[1.05] tracking-tight text-white mb-8 md:text-4xl">
+        <h1 className="text-5xl lg:text-7xl xl:text-8xl font-display font-bold leading-[1.05] tracking-tight text-white mb-8 md:text-5xl text-center">
           <span className="text-primary">The Tech-first holding</span>{" "}
           consolidating digital & manufacturing in Europe.
         </h1>
