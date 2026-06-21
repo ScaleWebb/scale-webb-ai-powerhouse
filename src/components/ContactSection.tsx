@@ -1,40 +1,31 @@
+import { ArrowUpRight } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
-import { Mail, MapPin } from "lucide-react";
 
-const ContactSection = () =>
-<section id="contact" className="section-padding bg-card/50">
-    <div className="max-w-4xl mx-auto text-center">
+const ContactSection = () => (
+  <section id="contact" className="relative overflow-hidden bg-blue py-24 text-white md:py-32">
+    <div className="contact-grid" aria-hidden="true" />
+    <div className="section-shell relative z-10">
       <AnimatedSection>
-        <p className="text-primary font-display text-sm font-medium tracking-widest uppercase mb-4">
-          Contact
-        </p>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6">
-          Are you a founder, a manufacturing entrepreneur, or an investor?
-        </h2>
-        <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-          Let's talk about how we can scale digital and manufacturing together with AI.
-        </p>
-
-        <a
-
-        className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-10 py-4 rounded-md font-display font-semibold text-lg hover:bg-primary/90 transition-all glow-primary mb-12" href="mailto:primary@scalewebb.com">
-
-          Request a call
-        </a>
-
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-muted-foreground">
-          <div className="flex items-center gap-2">
-            <Mail size={18} className="text-primary" />
-            <span className="text-sm">primary@scalewebb.com</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <MapPin size={18} className="text-primary" />
-            <span className="text-sm">Milan, Italy (HQ) – European hub TBD</span>
-          </div>
+        <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-white/60">A conversation is a good place to start</p>
+        <div className="mt-8 flex flex-col justify-between gap-12 lg:flex-row lg:items-end">
+          <h2 className="max-w-5xl font-display text-[clamp(3.1rem,7vw,7rem)] font-medium leading-[0.92] tracking-[-0.06em]">
+            Building the next<br />enduring company?
+          </h2>
+          <a
+            href="mailto:primary@scalewebb.com"
+            className="inline-flex min-h-14 shrink-0 items-center justify-center gap-3 rounded-full bg-white px-7 text-sm font-semibold text-blue transition-transform hover:-translate-y-1"
+          >
+            Contact Scale Webb
+            <ArrowUpRight size={17} />
+          </a>
+        </div>
+        <div className="mt-16 flex flex-col gap-3 border-t border-white/25 pt-6 text-sm text-white/[0.65] sm:flex-row sm:items-center sm:justify-between">
+          <p>For founders, operators and long-term capital partners.</p>
+          <p>Milan, Italy / Europe</p>
         </div>
       </AnimatedSection>
     </div>
-  </section>;
-
+  </section>
+);
 
 export default ContactSection;

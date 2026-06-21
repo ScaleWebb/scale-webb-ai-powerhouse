@@ -1,53 +1,34 @@
 import AnimatedSection from "./AnimatedSection";
-import { Cpu, Factory, MapPin, Repeat } from "lucide-react";
 
-const points = [
-  {
-    icon: Cpu,
-    title: "AI-First Technology",
-    text: "Native ERP + AI platform, not retrofit. Every process is powered by machine learning and analytics.",
-  },
-  {
-    icon: Factory,
-    title: "Deep Manufacturing Expertise",
-    text: "Deep focus on operations, supply chain, quality, and production. We're not just tech—we're industrial.",
-  },
-  {
-    icon: MapPin,
-    title: "Italian Roots, European Ambition",
-    text: "Credibility with Italian family SMEs, long-term culture. Ready to scale across Europe.",
-  },
-  {
-    icon: Repeat,
-    title: "Replicable Playbook",
-    text: "Industrial approach to product, integration, and growth. Inspired by the best: Bending Spoons, Constellation Software.",
-  },
+const principles = [
+  ["01", "Long-term ownership", "We make decisions for enduring enterprise value, not the next reporting cycle."],
+  ["02", "Operational depth", "Capital matters. Product judgment, talent and execution create the compounding."],
+  ["03", "Aligned partnership", "We treat founders and operators as partners, with clarity on ambition and accountability."],
+  ["04", "European perspective", "Built in Europe, connected globally and grounded in the region's technical excellence."],
 ];
 
 const WhySection = () => (
-  <section id="why" className="section-padding">
-    <div className="max-w-7xl mx-auto">
-      <AnimatedSection>
-        <p className="text-primary font-display text-sm font-medium tracking-widest uppercase mb-4">
-          Why Scale Webb
+  <section id="principles" className="section-padding bg-[#10141b]">
+    <div className="section-shell">
+      <AnimatedSection className="grid gap-10 lg:grid-cols-[0.45fr_0.55fr]">
+        <div>
+          <p className="section-index section-index-dark">04 / Our principles</p>
+          <h2 className="heading-light mt-8 max-w-xl">How we choose to build.</h2>
+        </div>
+        <p className="max-w-xl self-end text-lg leading-8 text-white/50">
+          Scale Webb is built around a simple belief: exceptional companies deserve owners who understand
+          the work, respect the people and stay committed to the outcome.
         </p>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-16 max-w-3xl">
-          What makes us unique.
-        </h2>
       </AnimatedSection>
 
-      <div className="grid sm:grid-cols-2 gap-6">
-        {points.map((p, i) => (
-          <AnimatedSection key={p.title} delay={i * 0.12}>
-            <div className="flex gap-5 bg-card border border-border rounded-xl p-8 hover:border-primary/30 transition-all duration-300 group">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                <p.icon size={24} className="text-primary" />
-              </div>
-              <div>
-                <h3 className="text-lg font-display font-semibold text-foreground mb-2">{p.title}</h3>
-                <p className="text-muted-foreground leading-relaxed text-sm">{p.text}</p>
-              </div>
-            </div>
+      <div className="mt-16 border-t border-white/10">
+        {principles.map(([number, title, text], index) => (
+          <AnimatedSection key={number} delay={index * 0.06}>
+            <article className="grid gap-5 border-b border-white/10 py-8 transition-colors hover:bg-white/[0.02] md:grid-cols-[80px_0.7fr_1fr] md:gap-8 md:px-4">
+              <span className="font-mono text-[10px] tracking-[0.2em] text-primary">{number}</span>
+              <h3 className="font-display text-2xl font-medium tracking-[-0.035em] text-white">{title}</h3>
+              <p className="max-w-xl leading-7 text-white/[0.45]">{text}</p>
+            </article>
           </AnimatedSection>
         ))}
       </div>
