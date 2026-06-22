@@ -1,32 +1,28 @@
-import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
-import VisionSection from "@/components/VisionSection";
-import BusinessModelSection from "@/components/BusinessModelSection";
-import ProductsSection from "@/components/ProductsSection";
-import TargetSection from "@/components/TargetSection";
-import KeyNumbersSection from "@/components/KeyNumbersSection";
-import WhySection from "@/components/WhySection";
-import RoadmapSection from "@/components/RoadmapSection";
-import TeamSection from "@/components/TeamSection";
-import ContactSection from "@/components/ContactSection";
+import CompaniesSection from "@/components/CompaniesSection";
+import CompanyFactorySection from "@/components/CompanyFactorySection";
 import Footer from "@/components/Footer";
+import HeroSection from "@/components/HeroSection";
+import Navbar from "@/components/Navbar";
+import OperatingModelSection from "@/components/OperatingModelSection";
+import ServicesContactSection from "@/components/ServicesContactSection";
+import ServicesSection from "@/components/ServicesSection";
+import TechnologyCoreSection from "@/components/TechnologyCoreSection";
+import TrustedBySection from "@/components/TrustedBySection";
+import WhatWeDoSection from "@/components/WhatWeDoSection";
 
 const Index = () => (
-  <div className="min-h-screen bg-background">
+  <div className="min-h-screen overflow-x-hidden bg-background">
     <Navbar />
     <main>
       <HeroSection />
-      <AboutSection />
-      <VisionSection />
-      <BusinessModelSection />
-      <ProductsSection />
-      <TargetSection />
-      <KeyNumbersSection />
-      <WhySection />
-      <RoadmapSection />
-      <TeamSection />
-      <ContactSection />
+      <CompaniesSection />
+      <WhatWeDoSection />
+      <OperatingModelSection />
+      <CompanyFactorySection />
+      <TechnologyCoreSection />
+      <ServicesSection />
+      <TrustedBySection />
+      <ServicesContactSection />
     </main>
     <Footer />
   </div>
