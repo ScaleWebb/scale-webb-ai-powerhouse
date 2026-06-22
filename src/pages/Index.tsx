@@ -1,11 +1,13 @@
 import CompaniesSection from "@/components/CompaniesSection";
 import CompanyFactorySection from "@/components/CompanyFactorySection";
-import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import OperatingModelSection from "@/components/OperatingModelSection";
+import ServicesContactSection from "@/components/ServicesContactSection";
+import ServicesSection from "@/components/ServicesSection";
 import TechnologyCoreSection from "@/components/TechnologyCoreSection";
+import TrustedBySection from "@/components/TrustedBySection";
 import WhatWeDoSection from "@/components/WhatWeDoSection";
 
 const Index = () => (
@@ -18,7 +20,9 @@ const Index = () => (
       <OperatingModelSection />
       <CompanyFactorySection />
       <TechnologyCoreSection />
-      <ContactSection />
+      <ServicesSection />
+      <TrustedBySection />
+      <ServicesContactSection />
     </main>
     <Footer />
   </div>

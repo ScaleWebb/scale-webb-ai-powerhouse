@@ -10,6 +10,7 @@ const companies = [
     logoClassName: "max-h-24 w-full max-w-[360px]",
     accent: "company-accent-blue",
     industry: "Sports technology",
+    href: "https://www.axenplatform.com",
   },
   {
     name: "Falde Atelier",
@@ -19,6 +20,7 @@ const companies = [
     logoClassName: "max-h-20 w-full max-w-[420px]",
     accent: "company-accent-pink",
     industry: "Fashion & luxury",
+    href: "https://www.faldeatelier.com",
   },
 ];
 
@@ -38,7 +40,13 @@ const CompaniesSection = () => (
       <div className="mt-16 grid gap-6 lg:grid-cols-2">
         {companies.map((company, index) => (
           <AnimatedSection key={company.name} delay={index * 0.1} className="h-full">
-            <article className={`company-card ${company.accent}`}>
+            <a
+              href={company.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`company-card ${company.accent}`}
+              aria-label={`Visit ${company.name} website`}
+            >
               <div className="company-logo-panel">
                 <img
                   src={company.logo}
@@ -51,14 +59,17 @@ const CompaniesSection = () => (
                   <span className="rounded-full border border-ink/10 px-3 py-1.5 font-mono text-[9px] uppercase tracking-[0.14em] text-ink/[0.45]">
                     {company.industry}
                   </span>
-                  <ArrowUpRight size={18} className="text-ink/25" />
+                  <span className="inline-flex items-center gap-2 text-xs font-semibold text-ink/50">
+                    Visit website
+                    <ArrowUpRight size={15} />
+                  </span>
                 </div>
                 <h3 className="mt-9 font-display text-3xl font-medium tracking-[-0.045em] text-ink md:text-4xl">
                   {company.name}
                 </h3>
                 <p className="mt-5 max-w-xl leading-7 text-ink/[0.55]">{company.description}</p>
               </div>
-            </article>
+            </a>
           </AnimatedSection>
         ))}
       </div>

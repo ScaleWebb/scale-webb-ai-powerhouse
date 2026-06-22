@@ -18,6 +18,10 @@ describe("Scale Webb homepage", () => {
     expect(container.textContent).toContain("We build and operate");
     expect(container.textContent).toContain("Our Companies");
     expect(container.textContent).toContain("The centralized technological core");
-    expect(container.querySelector('a[href="mailto:primary@scalewebb.com"]')).not.toBeNull();
+    expect(container.textContent).toContain("ScaleWebb Services");
+    expect(container.querySelector('a[href="https://www.axenplatform.com"][target="_blank"][rel="noopener noreferrer"]')).not.toBeNull();
+    expect(container.querySelector('a[href="https://www.faldeatelier.com"][target="_blank"][rel="noopener noreferrer"]')).not.toBeNull();
+    expect(container.querySelector('a[href="tel:+393453279011"]')).not.toBeNull();
+    expect(container.querySelector('a[href="mailto:service@scalewebb.com"]')).not.toBeNull();
   });
 });
