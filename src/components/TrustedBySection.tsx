@@ -1,13 +1,21 @@
 import AnimatedSection from "./AnimatedSection";
 
-const clients = ["Artemaglia", "Falde Atelier", "Axen Platform"];
+const clients = [
+  { name: "Artemaglia", logo: "/assets/artemaglia-logo.png", className: "trusted-logo-artemaglia" },
+  { name: "Falde Atelier", logo: "/assets/falde-logo.png", className: "trusted-logo-falde" },
+  { name: "Axen Platform", logo: "/assets/axen-logo.png", className: "trusted-logo-axen" },
+];
 
 const ClientSet = ({ hidden = false }: { hidden?: boolean }) => (
   <div className="trusted-set" aria-hidden={hidden || undefined}>
-    {clients.map((client, index) => (
-      <div key={client} className="trusted-pill">
-        <span className={`trusted-dot trusted-dot-${index + 1}`} />
-        {client}
+    {clients.map((client) => (
+      <div key={client.name} className="trusted-pill">
+        <img
+          src={client.logo}
+          alt={hidden ? "" : `${client.name} logo`}
+          className={`trusted-logo ${client.className}`}
+          loading="lazy"
+        />
       </div>
     ))}
   </div>

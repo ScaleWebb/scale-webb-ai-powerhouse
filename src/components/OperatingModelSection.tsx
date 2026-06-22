@@ -13,7 +13,8 @@ const OperatingModelSection = () => (
       </AnimatedSection>
 
       <AnimatedSection className="operating-diagram" delay={0.1}>
-        <div className="diagram-line diagram-line-horizontal" aria-hidden="true" />
+        <div className="diagram-line diagram-line-horizontal diagram-line-top" aria-hidden="true" />
+        <div className="diagram-line diagram-line-horizontal diagram-line-bottom" aria-hidden="true" />
         <div className="diagram-line diagram-line-vertical" aria-hidden="true" />
         <div className="diagram-company diagram-company-axen">
           <span className="diagram-dot bg-candy-blue" />
@@ -24,6 +25,11 @@ const OperatingModelSection = () => (
           <span className="diagram-dot bg-candy-pink" />
           <span>Falde Atelier</span>
           <small>Fashion & luxury</small>
+        </div>
+        <div className="diagram-company diagram-company-services">
+          <span className="diagram-dot bg-candy-yellow" />
+          <span>ScaleWebb Services</span>
+          <small>Services for companies</small>
         </div>
         <div className="diagram-company diagram-company-new">
           <span className="diagram-dot bg-candy-mint" />
