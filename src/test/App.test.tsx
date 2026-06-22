@@ -15,9 +15,9 @@ describe("Scale Webb homepage", () => {
   it("renders the institutional narrative and primary contact action", async () => {
     await act(async () => root.render(<Index />));
 
-    expect(container.textContent).toContain("We build enduring");
-    expect(container.textContent).toContain("Investment thesis");
-    expect(container.textContent).toContain("Operating platform");
+    expect(container.textContent).toContain("We build and operate");
+    expect(container.textContent).toContain("Our Companies");
+    expect(container.textContent).toContain("The centralized technological core");
     expect(container.querySelector('a[href="mailto:primary@scalewebb.com"]')).not.toBeNull();
   });
 });

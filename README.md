@@ -1,6 +1,6 @@
 # Scale Webb
 
-Static corporate website for Scale Webb, a European technology holding and venture studio.
+Static corporate website for ScaleWebb, an operating technology holding and company factory.
 
 ## Stack
 

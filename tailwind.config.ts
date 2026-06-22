@@ -22,6 +22,11 @@ export default {
         foreground: "hsl(var(--foreground))",
         ink: "hsl(var(--ink))",
         blue: "hsl(var(--blue))",
+        "candy-purple": "var(--candy-purple)",
+        "candy-pink": "var(--candy-pink)",
+        "candy-yellow": "var(--candy-yellow)",
+        "candy-blue": "var(--candy-blue)",
+        "candy-mint": "var(--candy-mint)",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
